@@ -2,5 +2,3 @@
 echo $((`echo $PATH | grep -o ":/" | wc -l`+ 1))
 
 
-
-
