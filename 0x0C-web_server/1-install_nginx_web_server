@@ -11,6 +11,9 @@ sudo apt-get update -y -qq && \
 echo -e "\nSetting up some minor stuff.\n"
 
 # starting nginx service
+sudo service nginx start
+
+# allowing nginx on firewall
 sudo ufw allow 'Nginx HTTP'
 
 # Give the user ownership to website files for easy editing
