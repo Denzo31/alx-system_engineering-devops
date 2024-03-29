@@ -13,7 +13,7 @@ function install() {
 	#shellcheck disable=SC2181
 	if [ $? -ne 0 ]; then
 		echo -e "	Installing: $1$\n"
-		sudo apt-get upate -y -qq && \
+		sudo apt-get update -y -qq && \
 			sudo apt-get install -y "$1" -qq
 		echo -e "\n"
 	else
